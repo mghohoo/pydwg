@@ -869,7 +869,7 @@ class DWGUtils:
         return opcode, length, src_idx, dst_idx
 
 
-    def decompress_r2007(self, src_buf, dst_size):
+    def decompress_r21(self, src_buf, dst_size):
         """Decompress R21 data
 
         Args:

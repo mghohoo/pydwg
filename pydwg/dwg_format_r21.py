@@ -558,7 +558,7 @@ class DWGFormatR21(DWGFormatBase):
         # self.utils.print_hex_bytes(data, 32)
 
         if size_compressed < size_uncompressed:
-            data = self.utils.decompress_r2007(
+            data = self.utils.decompress_r21(
                     data[0:size_compressed],
                     size_uncompressed
             )
@@ -619,7 +619,7 @@ class DWGFormatR21(DWGFormatBase):
         data = self.utils.decode_reed_solomon(data, 239, block_count)
 
         if size_compressed < size_uncompressed:
-            data = self.utils.decompress_r2007(
+            data = self.utils.decompress_r21(
                     data[0:size_compressed],
                     size_uncompressed
             )
@@ -763,7 +763,7 @@ class DWGFormatR21(DWGFormatBase):
             data = data[offset:offset+length]
             self.logger.debug("{}(): 2nd file header is not compressed.".format(GET_MY_NAME()))
         elif length > 0:
-            data = self.utils.decompress_r2007(data[offset:offset+length], 0x110)
+            data = self.utils.decompress_r21(data[offset:offset+length], 0x110)
         else:
             self.logger.debug("{}(): 2nd file header is not compressed.".format(GET_MY_NAME()))
             return d
