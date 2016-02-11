@@ -47,4 +47,6 @@ Please submit feedback via the pydwg [tracker](http://github.com/sarahchung/pydw
 
 Author: Hyunji Chung (localchung@gmail.com)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-45447336-2/welcome-page)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-45447336-2/pydwg/readme?pixel)](https://github.com/igrigorik/ga-beacon)
+
+
