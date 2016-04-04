@@ -10,17 +10,6 @@ A DWG file format parser and a tool set for digital forensics and incident respo
 
 Clone the git repo `https://github.com/sarahchung/pydwg.git` or [download it](https://github.com/sarahchung/pydwg/zipball/master)
 
-Execute `pydwg-tools` to analyze an DWG file
-<pre>
-python  pydwg-tools.py  -h
-</pre>
-
-Examples of usage
-<pre>
-python  pydwg-tools.py  v  sample-r21.dwg
-python  pydwg-tools.py  m  sample-r18.dwg
-</pre>
-
 
 ## Key Features
 
@@ -29,11 +18,7 @@ python  pydwg-tools.py  m  sample-r18.dwg
 * AutoCAD DWG R24 and R27 file (todo)
 
 #### Features of *pydwg-tools*
-* Format validation (argument 'v')
-
 * Metadata extraction (argument 'm')
-
-* Handle distribution analysis (argument 'h')
 
 
 ## License
